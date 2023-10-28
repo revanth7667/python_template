@@ -5,7 +5,11 @@ install:
 format:	
 	find ./codes -type f -name "*.py" -exec black {} \;
 	find ./codes -type f -name "*.ipynb" -exec nbqa black {} \;
-		 
+
+install_actions: 
+	pip install --upgrade pip &&\
+		pip install -r requirements_actions.txt
+
 lint:
 	find ./codes -type f -name "*.py" -exec ruff check {} \;
 	find ./codes -type f -name "*.ipynb" -exec nbqa ruff {} \;
