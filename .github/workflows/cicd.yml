@@ -1,10 +1,16 @@
 name: CI
-# Testing is paused, activate in acrtual repo
+# Testing is paused, activate in actual repo
 on:
   push:
     branches: [ "main" ]
+    paths: 
+    - "**.py"
+    - "**.ipynb"
   pull_request:
     branches: [ "main" ]
+    paths: 
+    - "**.py"
+    - "**ipynb"
   workflow_dispatch:
 
 jobs:
