@@ -1,0 +1,10 @@
+#Devops
+black
+black_nbconvert
+pytest
+pytest-cov
+pytest-playwright
+pylint
+ruff
+nbval
+nbqa
